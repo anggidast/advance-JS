@@ -1,5 +1,5 @@
 // ambil semua elemen video
-const videos = Array.from(document.querySelectorAll('[data-duration'));
+const videos = Array.from(document.querySelectorAll('[data-duration]'));
 
 // pilih hanya 'JAVASCRIPT LANJUTAN'
 let jsLanjutan = videos.filter(video => video.textContent.includes('JAVASCRIPT LANJUTAN'))
@@ -15,7 +15,7 @@ let jsLanjutan = videos.filter(video => video.textContent.includes('JAVASCRIPT L
     })
 
     // jumlahkan semua detiknya
-    .reduce((total, detik) => total + detik);
+    .reduce((total, detik) => total + detik)
 
 // ubah formatnya menjadi jam menit detik
 const jam = Math.floor(jsLanjutan / 3600);
